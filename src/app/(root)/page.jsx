@@ -7,13 +7,13 @@ const page = () => {
         <>
       
       <div className='w-full flex gap-2'>
-                <div className='bg-[#FFFFFF] w-[15%] lg:h-[calc(100vh-175px)] rounded-xl lg:overflow-y-scroll px-4'>
+                <div className='bg-[#FFFFFF] w-[20%] lg:h-[calc(100vh-175px)] rounded-xl px-4'>
                 <FoodItem/>
                 </div>
-                <div className='bg-[#FFFFFF] w-[68%] min-h-screen rounded-xl px-4'>
+                <div className='bg-[#FFFFFF] w-[60%] min-h-screen rounded-xl px-4'>
                 <HomeContent/>
                 </div>
-                <div className='bg-[#FFFFFF] w-[15%] h-64 rounded-xl px-4'>
+                <div className='bg-[#FFFFFF] w-[20%] h-64 rounded-xl px-4'>
                 <FoodItem/>
                 </div>
             
