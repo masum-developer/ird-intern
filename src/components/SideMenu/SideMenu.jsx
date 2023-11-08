@@ -8,39 +8,38 @@ import Image from 'next/image';
 import Link from 'next/link';
 const SideMenu = () => {
     return (
-        <>
-            <ul>
-                <li>
+        
+            <div className='flex lg:flex-col justify-evenly'>
+                <div>
                     <Link href='/'>
-                    <Image className='py-10' src={homeImage} alt="home"></Image>
+                    <Image className='lg:py-10' src={homeImage} alt="home"></Image>
                     </Link>
                 
-                </li>
-                <li>
+                </div>
+                <div>
                   <Link href='/empty'>
                   <Image src={dashboard} alt="dashboard"></Image>
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                   <Link href='/empty'>
-                  <Image className='py-10' src={arrow} alt="dashboard"></Image>
+                  <Image className='lg:py-10' src={arrow} alt="dashboard"></Image>
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                   <Link href='/empty'>
                   <Image src={video} alt="dashboard"></Image>
                   </Link>
-                </li>
-                <li>
+                </div>
+                <div>
                   <Link href='/empty'>
-                  <Image className='py-10' src={more} alt="dashboard"></Image>
+                  <Image className='lg:py-10' src={more} alt="dashboard"></Image>
                   </Link>
-                </li>
+                </div>
 
-            </ul>
+            </div>
             
             
-        </>
     );
 };
 

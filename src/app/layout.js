@@ -15,14 +15,13 @@ export const metadata = {
     <html lang="en">
       <body className={inter.className}>
       <NavBar/>
-      <div className='flex bg-[#FFFFFF]'>
-        <aside className='w-[5%] min-h-screen bg-[#FFFFFF] ml-4'>
+      <div className='flex lg:flex-row bg-[#FFFFFF] w-[100%] flex-col-reverse'>
+        <div className='w-[100%] lg:w-[5%] min-h-screen bg-[#FFFFFF] ml-4'>
             <SideMenu/>
-            
-        </aside>
-        <main className='w-[95%] min-h-screen  border-8 border-[#EEF0F2] bg-[#EEF0F2] rounded-tl-xl'>
+        </div>
+        <div className='w-[100%] lg:w-[95%] min-h-screen  border-8 border-[#EEF0F2] bg-[#EEF0F2] rounded-tl-xl'>
         {children}
-        </main>
+        </div>
       </div>
         
       </body>
