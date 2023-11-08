@@ -1,22 +1,24 @@
-import NavBar from '@/components/NavBar/NavBar';
-import SideMenu from '@/components/SideMenu/SideMenu';
-import Image from 'next/image';
+import FoodItem from '@/components/FoodItem/FoodItem';
+import HomeContent from '@/components/HomeContent/HomeContent';
 import React from 'react';
 
 const page = () => {
     return (
         <>
-      <NavBar/>
-      <div>
-        <aside className='w-10 min-h-screen bg-slate-100'>
-            <SideMenu/>
-            
-        </aside>
-        <main>
-                    <h2>Masum</h2>
-        </main>
-      </div>
       
+      <div className='w-full flex gap-2'>
+                <div className='bg-[#FFFFFF] w-[15%] lg:h-[calc(100vh-175px)] rounded-xl lg:overflow-y-scroll px-4'>
+                <FoodItem/>
+                </div>
+                <div className='bg-[#FFFFFF] w-[68%] min-h-screen rounded-xl px-4'>
+                <HomeContent/>
+                </div>
+                <div className='bg-[#FFFFFF] w-[15%] h-64 rounded-xl px-4'>
+                <FoodItem/>
+                </div>
+            
+            </div>
+
     </>
     );
 };

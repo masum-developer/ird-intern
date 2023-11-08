@@ -51,37 +51,17 @@ const NavBar = () => {
               </li>
             </ul>
           </div> */}
-          <a className="btn btn-ghost normal-case text-xl"><Image src={logoImage}></Image></a>
+          <a className="btn btn-ghost normal-case text-xl"><Image src={logoImage} alt="logo"></Image></a>
         </div>
-        <div className="navbar-center hidden lg:flex">
-            <input type="text" placeholder="Search best food" />
-            <Image src={searchImage} alt="search"></Image>
-          {/* <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li tabIndex={0}>
-              <details>
-                <summary>Parent</summary>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul> */}
+        <div className="navbar-center hidden lg:flex relative">
+            <input className="border py-1.5 px-4 rounded" type="text" placeholder="Search best food" />
+            <Image className="absolute right-1" src={searchImage} alt="search"></Image>
+
         </div>
         <div className="navbar-end">
-        <span className="mr-3 hidden lg:block"><Image src={brightImage}></Image></span>
-          <span className="mr-3 hidden lg:block"><Image src={switchImage}></Image></span>
-          <span className="mr-3"><Image src={menuImage}></Image></span>
+        <span className="mr-3 hidden lg:block"><Image src={brightImage} alt="brightness"></Image></span>
+          <span className="mr-3 hidden lg:block"><Image src={switchImage} alt="switch"></Image></span>
+          <span className="mr-3"><Image src={menuImage} alt="menu"></Image></span>
         </div>
       </div>
     </>
