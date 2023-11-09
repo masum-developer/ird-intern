@@ -6,7 +6,7 @@ import apple from "@/assets/FoodListImage/apple.jpg";
 import avocado from "@/assets/FoodListImage/avocado.jpg";
 const FoodItem = () => {
   return (
-    <div>
+    <div className="h-[400vh] scrollbar scrollbar-thumb-rose-500">
       <div className="w- p-1 flex gap-1 border rounded-md border-red-400 mt-3 ">
         <button className="w-1/2 bg-red-100 px-1 rounded">
           <small className="text-red-700">Fruits</small>
@@ -63,6 +63,33 @@ const FoodItem = () => {
           </div>
           <div className="ml-2">
             <h3 className="font-semibold">Strawberries</h3>
+            <p className="font-light">Vitamin C</p>
+          </div>
+        </div>
+        <div className="flex justify-items-center items-center border border-white hover:border-red-500 rounded-md p-1">
+          <div>
+            <Image src={avocado} alt="orange"></Image>
+          </div>
+          <div className="ml-2">
+            <h3 className="font-semibold">Mangoes</h3>
+            <p className="font-light">Vitamin C</p>
+          </div>
+        </div>
+        <div className="flex justify-items-center items-center border border-white hover:border-red-500 rounded-md p-1">
+          <div>
+            <Image src={avocado} alt="orange"></Image>
+          </div>
+          <div className="ml-2">
+            <h3 className="font-semibold">Mangoes</h3>
+            <p className="font-light">Vitamin C</p>
+          </div>
+        </div>
+        <div className="flex justify-items-center items-center border border-white hover:border-red-500 rounded-md p-1">
+          <div>
+            <Image src={avocado} alt="orange"></Image>
+          </div>
+          <div className="ml-2">
+            <h3 className="font-semibold">Mangoes</h3>
             <p className="font-light">Vitamin C</p>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import t from "@/assets/SettingImage/t.jpg";
+import up from "@/assets/SettingImage/up.jpg";
 
 const SettingParagraph = () => {
   return (
@@ -15,7 +16,7 @@ const SettingParagraph = () => {
           </div>
         </div>
         <div>
-          <Image src={t} alt="t"></Image>
+          <Image src={up} alt="up"></Image>
         </div>
       </div>
       <div className="flex justify-between mb-4">
@@ -39,9 +40,9 @@ const SettingParagraph = () => {
           <option>All Vitamin</option>
         </select>
       </div>
-      <div className="flex justify-between mb-4">
+      <div className="flex justify-between mb-">
         <h3>Turn Off Subtitles</h3>
-        <input type="checkbox" className="toggle" disabled checked />
+        <input type="checkbox" className="toggle bg-gray-300 border-gray-400"/>
       </div>
     </div>
   );
